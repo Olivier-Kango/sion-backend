@@ -1,4 +1,4 @@
-class FoodsController < ApplicationController
+class Api::V1::FoodsController < ApplicationController
   before_action :set_food, only: %i[show update destroy]
 
   # GET /foods
@@ -36,6 +36,7 @@ class FoodsController < ApplicationController
   # DELETE /foods/1
   def destroy
     @food.destroy
+    render json: { message: 'Food successfully deleted.' }
   end
 
   private
