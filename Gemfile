@@ -49,3 +49,5 @@ group :development do
 end
 
 gem 'hirb'
+gem 'rswag'
+gem 'rswag-ui'
