@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :orders
-  resources :foods
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :api do
+    namespace :v1 do
+      resources :foods
+      resources :orders
+    end
+  end
 end
