@@ -12,11 +12,12 @@ class User < ApplicationRecord
   before_save :assign_role
 
   def admin?
-    self.role == 'admin'
+    role == 'admin'
   end
 
   private
+
   def assign_role
-    self.role = 'regular' if role.nil? or role == ""
+    self.role = 'regular' if role.nil? or role == ''
   end
 end
