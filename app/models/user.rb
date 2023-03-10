@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :jwt_authenticatable, jwt_revocation_strategy: self
 
   has_many :orders
-  validates :email, presence: true
+  validates :email, :name, :role, presence: true
   validates :password, presence: true
 end

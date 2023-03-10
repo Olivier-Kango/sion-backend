@@ -11,7 +11,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
         data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
       }
     else
-      puts resource.errors.inspect
       render json: {
         status: { code: 422,
                   message: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}" }
