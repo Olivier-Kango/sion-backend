@@ -4,7 +4,19 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
 
-  has_many :orders
-  validates :email, :name, :role, presence: true
+  has_many :orders, dependent: :destroy
+  has_many :foods, through: :orders
+
+  validates :email, :name, presence: true
   validates :password, presence: true
+  before_save :assign_role
+
+  def admin?
+    self.role == 'admin'
+  end
+
+  private
+  def assign_role
+    self.role = 'regular' if role.nil? or role == ""
+  end
 end
