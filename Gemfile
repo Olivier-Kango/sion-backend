@@ -14,6 +14,9 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
 
+# For User authorizations
+gem 'cancancan'
+
 # For testing
 gem 'rubocop', '>= 1.0', '< 2.0'
 
