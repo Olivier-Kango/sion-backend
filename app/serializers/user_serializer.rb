@@ -3,6 +3,6 @@ class UserSerializer
   attributes :id, :email, :created_at
 
   attribute :created_at do |user|
-    user.created_at && user.created_at.strftime('%m/%d/%Y')
+    user.created_at&.strftime('%m/%d/%Y')
   end
 end
