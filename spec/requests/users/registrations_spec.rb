@@ -1,12 +1,9 @@
 require 'swagger_helper'
 
 RSpec.describe 'users/registrations', type: :request do
-
   path '/signup/cancel' do
-
     get('cancel registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -20,10 +17,8 @@ RSpec.describe 'users/registrations', type: :request do
   end
 
   path '/signup/sign_up' do
-
     get('new registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -37,10 +32,8 @@ RSpec.describe 'users/registrations', type: :request do
   end
 
   path '/signup/edit' do
-
     get('edit registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -54,10 +47,8 @@ RSpec.describe 'users/registrations', type: :request do
   end
 
   path '/signup' do
-
     patch('update registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -71,7 +62,6 @@ RSpec.describe 'users/registrations', type: :request do
 
     put('update registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -85,7 +75,6 @@ RSpec.describe 'users/registrations', type: :request do
 
     delete('delete registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -99,7 +88,6 @@ RSpec.describe 'users/registrations', type: :request do
 
     post('create registration') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
