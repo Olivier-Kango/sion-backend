@@ -18,7 +18,7 @@ class Api::V1::FoodsController < ApplicationController
     @food = Food.new(food_params)
 
     if @food.save
-      render json: @food, status: :created, location: @food
+      render json: @food, status: :created
     else
       render json: @food.errors, status: :unprocessable_entity
     end
@@ -48,6 +48,6 @@ class Api::V1::FoodsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def food_params
-    params.require(:food).permit(:name, :image, :quantity, :price, :delivery_time)
+    params.require(:food).permit(:name, :image, :quantity, :unit_price)
   end
 end
