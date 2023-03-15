@@ -1,0 +1,145 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/foods":
+    get:
+      summary: list foods
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create food
+      responses:
+        '200':
+          description: successful
+  "/api/v1/foods/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show food
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update food
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update food
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete food
+      responses:
+        '200':
+          description: successful
+  "/api/v1/orders":
+    get:
+      summary: list orders
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create order
+      responses:
+        '200':
+          description: successful
+  "/api/v1/orders/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show order
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update order
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update order
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete order
+      responses:
+        '200':
+          description: successful
+  "/signup/cancel":
+    get:
+      summary: cancel registration
+      responses:
+        '200':
+          description: successful
+  "/signup/sign_up":
+    get:
+      summary: new registration
+      responses:
+        '200':
+          description: successful
+  "/signup/edit":
+    get:
+      summary: edit registration
+      responses:
+        '200':
+          description: successful
+  "/signup":
+    patch:
+      summary: update registration
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update registration
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete registration
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create registration
+      responses:
+        '200':
+          description: successful
+  "/login":
+    get:
+      summary: new session
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create session
+      responses:
+        '200':
+          description: successful
+  "/logout":
+    delete:
+      summary: delete session
+      responses:
+        '200':
+          description: successful
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
