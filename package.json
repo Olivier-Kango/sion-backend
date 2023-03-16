@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "yarn": "1.22.19",
     "@rails/webpacker": "5.4.4",
     "webpack": "^5.76.2",
     "webpack-cli": "3.3.12"
