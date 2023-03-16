@@ -83,6 +83,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: meal_master_production
-  username: meal_master
-  password: <%= ENV['MEAL_MASTER_DATABASE_PASSWORD'] %>
+  database: final_capstone_production
+  username: final_capstone
+  password: <%= ENV['FINAL_CAPSTONE_DATABASE_PASSWORD'] %>

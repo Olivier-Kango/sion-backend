@@ -1,12 +1,12 @@
 databases:
-  - name: meal_master-db
-    databaseName: meal_master
-    user: meal_master
+  - name: final_capstone-db
+    databaseName: final_capstone
+    user: final_capstone
     plan: free
 
 services:
   - type: web
-    name: meal_master
+    name: final_capstone
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
@@ -14,7 +14,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: meal_master-db
+          name: final_capstone-db
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
