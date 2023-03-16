@@ -9,7 +9,8 @@
   },
   "name": "my-package",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --hot --inline",
     "test": "jest"
   }
 }
