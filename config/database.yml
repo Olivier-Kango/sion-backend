@@ -84,5 +84,5 @@ production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
   database: meal_master_production
-  username: <%= ENV['MEAL_MASTER_DATABASE_USERNAME'] %>
+  username: meal_master
   password: <%= ENV['MEAL_MASTER_DATABASE_PASSWORD'] %>
