@@ -6,6 +6,8 @@
     "webpack-cli": "3.3.12"
   },
   "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "3.3.12",
     "webpack-dev-server": "3"
   },
   "name": "my-package",
