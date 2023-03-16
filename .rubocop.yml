@@ -1,10 +1,8 @@
-inherit_from: .rubocop_todo.yml
-
 AllCops:
   NewCops: enable
   Exclude:
     - "db/**/*"
-    - "bin/*" 
+    - "bin/*"
     - "config/**/*"
     - "Guardfile"
     - "Rakefile"
@@ -27,9 +25,11 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
-  Max: 55
-
+  IgnoredMethods: ["describe"]
+  Max: 30
+  Exclude:
+    - "Rakefile"
+    - "spec/**/*.rb"
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
@@ -60,5 +60,3 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Layout/EndOfLine:
-  EnforcedStyle: lf
