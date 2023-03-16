@@ -3,13 +3,13 @@
 one:
   name: MyString
   image: MyString
-  quantity: 1
+  # quantity: 1
   price: 1
   delivery_time: 1
 
 two:
   name: MyString
   image: MyString
-  quantity: 1
+  # quantity: 1
   price: 1
   delivery_time: 1
