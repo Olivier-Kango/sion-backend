@@ -8,7 +8,8 @@
   - [🛠 Built with](#built-with)
     - [Tech stack ](#tech-stack)
     - [Key features ](#key-features)
-  - [🗎 API documentation ](#api-docs)  
+  - [🗎 API documentation ](#api-docs)
+  - [🗎 Kanban Board](#kanban-board) 
   - [🚀 Live demo ](#live-demo)
   - [💻 Getting started ](#getting-started)
     - [Pre requisites](#pre-requisites)
@@ -69,6 +70,16 @@
 > <a href="http://127.0.0.1:5000/api-docs/index.html">local API Doc link</a>
 
 > <a href="https://app.swaggerhub.com/apis-docs/KASAIJAK/meal-master-final-capstone-api-documentation/v1">Remote API Doc link</a>
+
+## <img src="https://cdn-icons-png.flaticon.com/512/5360/5360804.png" width="23" height="20"/> Kanban Board <a id="kanban-board"></a>
+- We are a team of five and used Kanban board to manage our project tasks
+
+- Check here Kanban Board [Kanban Board](https://github.com/users/DaveZag/projects/2/views/1)
+
+- Here  is the link to [kanban board initial state](https://user-images.githubusercontent.com/108806646/223073503-281902af-2be4-44a1-840c-394ca01a7447.png)
+
+
+
 
 <!-- React Frontend -->
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="20" height="20"/>  <a href="https://github.com/DaveZag/meal-master-frontend">Meal-Master-Frontend</a>
