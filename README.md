@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+<a id="readme-top"></a>
 
 # 📗 Table of Contents
 
@@ -26,16 +26,16 @@
   - [📝 License ](#-license)
 
 
-# 📖 **MEAL MASTER BACKEND**
+# 📖 **MEAL MASTER BACKEND** <a id="meal-master-backend">
 
 **Meal-Master** is a fullstack web application that is built on rails framework and React that enables a user to create an account, sign-in, order foods of their liking, and/or delete their orders.
 
-## **Erd diagram**
+## **Erd diagram** <a id="erddiagram">
 <img src="./erd_diagram.png" width="700" height="300"/>
 
-## 🛠 **Built with** <a name="built-with">
+## 🛠 **Built with** <a id="built-with">
 
-### **Tech stack** <a name="tech-stack"></a>
+### **Tech stack** <a id="tech-stack"></a>
 
   <summary>Client</summary>
   <ul>
@@ -52,20 +52,20 @@
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 
-### **Key features** <a name="key-features"></a>
+### **Key features** <a id="key-features"></a>
 
 > Key features of the application are
 
-**[Fetch all orders]**
-- **[Fetch all foods]**
-- **[Authenticate users]**
-- **[Add food]**
-- **[Delete food]**
-- **[Place orders]**
-- **[Delete orders]**
+- **Fetch all orders**
+- **Fetch all foods**
+- **Authenticate users**
+- **Add food**
+- **Delete food**
+- **Place orders**
+- **Delete orders**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🗎 **API documentation** <a name="api-docs"></a>
+## 🗎 **API documentation** <a id="api-docs"></a>
 > <a href="http://127.0.0.1:5000/api-docs/index.html">local API Doc link</a>
 
 > <a href="https://app.swaggerhub.com/apis-docs/KASAIJAK/meal-master-final-capstone-api-documentation/v1">Remote API Doc link</a>
@@ -74,7 +74,7 @@
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="20" height="20"/>  <a href="https://github.com/DaveZag/meal-master-frontend">Meal-Master-Frontend</a>
 
 
-## 🚀 **Live demo** <a name="live-demo"></a>
+## 🚀 **Live demo** <a id="live-demo"></a>
 
 - [Live Demo]()
 
@@ -82,7 +82,7 @@
 
 
 
-## 💻 **Getting started** <a name="getting-started"></a>
+## 💻 **Getting started** <a id="getting-started"></a>
 
 > This project can be used by anyone for any good purpose.
 
@@ -152,7 +152,7 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 **Authors** <a name="authors"></a>
+## 👥 **Authors** <a id="authors"></a>
 
 👤 **Dave Zagabe** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
@@ -187,13 +187,14 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🔭 **Future Features** <a name="future-features"></a>
-
+## 🔭 **Future Features** <a id="future-features"></a>
+- Implement Mobile Version
+- Add the ability to upload an Image
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🤝 **Contributing** <a name="contributing"></a>
+## 🤝 **Contributing** <a id="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
@@ -203,14 +204,14 @@ Feel free to check the [issues page](https://github.com/DaveZag/meal-master-back
 
 
 
-## ⭐️ **Show your support** <a name="support"></a>
+## ⭐️ **Show your support** <a id="support"></a>
 
 If you like this project buy us a [drink](.../.../)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🙏 **Acknowledgments** <a name="acknowledgements"></a>
+## 🙏 **Acknowledgments** <a id="acknowledgements"></a>
 
 I would like to acknowledge:
 
@@ -221,7 +222,7 @@ I would like to acknowledge:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ **FAQ** <a name="faq"></a>
+## ❓ **FAQ** <a id="faq"></a>
 
 - **Is Rails still relevant?**
 
@@ -235,7 +236,7 @@ I would like to acknowledge:
 
 <!-- LICENSE -->
 
-## 📝 **License** <a name="license"></a>
+## 📝 **License** <a id="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
 
