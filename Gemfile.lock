@@ -113,6 +113,8 @@ GEM
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
+    jsbundling-rails (1.1.1)
+      railties (>= 6.0.0)
     json (2.6.3)
     json-schema (3.0.0)
       addressable (>= 2.8)
@@ -302,6 +304,7 @@ DEPENDENCIES
   devise-jwt
   figaro
   hirb
+  jsbundling-rails
   jsonapi-serializer
   pg (~> 1.1)
   puma (~> 5.0)

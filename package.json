@@ -1,19 +1,12 @@
 {
-  "dependencies": {
-    "yarn": "1.22.19",
-    "@rails/webpacker": "5.4.4",
-    "webpack": "^5.76.2",
-    "webpack-cli": "3.3.12"
-  },
-  "devDependencies": {
-    "webpack": "^5.76.2",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3"
-  },
   "name": "my-package",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --hot --inline",
-    "test": "jest"
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.2"
+  },
+  "dependencies": {
+    "webpack-cli": "^5.0.1"
   }
 }
