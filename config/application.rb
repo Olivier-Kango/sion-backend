@@ -23,5 +23,9 @@ module MealMasterBackend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.assets.enabled = true
+
+    # Configure session store
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_meal_master_session'
   end
 end

@@ -1,0 +1,13 @@
+{
+  "name": "my-package",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.2"
+  },
+  "dependencies": {
+    "@rails/webpacker": "^5.4.4",
+    "webpack-cli": "^5.0.1"
+  }
+}

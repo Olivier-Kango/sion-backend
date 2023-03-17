@@ -87,7 +87,7 @@
 
 ## 🚀 **Live demo** <a id="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://master-meal.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
