@@ -13,10 +13,10 @@
   - [🚀 Live demo ](#live-demo)
   - [💻 Getting started ](#getting-started)
     - [Pre requisites](#pre-requisites)
-    - [Setup ](#-setup)
+    - [Setup ](#setup)
     - [Install ](#-install)
-    - [Usage ](#-usage)
-    - [Run tests ](#-run-tests)
+    - [Usage ](#usage)
+    - [Run tests ](#run-tests)
     - [Deployment ](#-deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future features ](#-future-features)
@@ -112,7 +112,7 @@ In order to run this project you need:
 > - Knwoledge of javascript and react
 > - Github account is required
 
-### **Setup**
+### **Setup** <a id="setup"></a>
 
 Clone this repository to your desired folder:
 
@@ -132,20 +132,30 @@ Install this project with:
 1) Please run rails db:create and rails db:migrate. 
 2) Check Ruby version and database.yml file. ( Insert your password if there is required)
 
-### **Usage**
+### **Usage** <a id="usage"></a>
 
 To run the project, execute the following command:
 
 ```sh
   rails s # for running the project in development mode
 ```
-### **Run tests**
+### **Run tests** <a id="run-tests"></a>
 
 To run tests, run the following command:
 
 ```sh
   rubocop -A # for checking and correcting linter errors
-  bin/rails rspec spec
+  rake rswag # for checking the API documentation
+```
+Note: If for some reason you are not able to run the tests, please delete the folowing files:
+```sh
+  config/credentials.yml.enc
+  config/master.key
+
+  and run the following commands:
+  EDITOR="code --wait" bin/rails credentials:edit
+
+  and then run the tests again
 ```
 
 ### **Deployment**
