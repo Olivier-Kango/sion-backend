@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-gem install bundler -v 2.4.10 --user-install
+gem install bundler -v 2.1 --user-install
 
 bundle install
 bundle exec rake assets:precompile
