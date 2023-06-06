@@ -2,8 +2,8 @@
 # exit on error
 set -o errexit
 
-# Set the Ruby version
-rbenv local 3.1.3
+# Use the locally installed Ruby
+rvm use 3.1.3
 
 # Install Bundler
 gem install bundler -v 2.4.10
