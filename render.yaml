@@ -1,0 +1,20 @@
+databases:
+  - name: pss-digital-db
+    databaseName: pss-digital-db
+    user: pss-digital
+    plan: free
+
+services:
+  - type: web
+    name: pss-digital
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pss-digital-db
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
