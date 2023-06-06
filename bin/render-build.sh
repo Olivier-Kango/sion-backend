@@ -7,8 +7,7 @@ export PATH=/opt/render/ruby/2.5.0/bin:$PATH
 
 gem install bundler -v 2.2.28 --user-install
 
-bundle install
-bundle exec rake assets:precompile
-bundle exec rake assets:clean
-bundle exec rake db:migrate
-
+~/.gem/ruby/2.5.0/bin/bundle install
+~/.gem/ruby/2.5.0/bin/bundle exec rake assets:precompile
+~/.gem/ruby/2.5.0/bin/bundle exec rake assets:clean
+~/.gem/ruby/2.5.0/bin/bundle exec rake db:migrate
