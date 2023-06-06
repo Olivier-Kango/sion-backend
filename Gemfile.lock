@@ -311,7 +311,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bundler (= 2.4.10)
   cancancan
   capistrano
   debug
