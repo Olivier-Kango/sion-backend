@@ -2,8 +2,6 @@
 # exit on error
 set -o errexit
 
-gem install cocoapods
-
 # Install Bundler
 gem install bundler -v 2.4.10
 
