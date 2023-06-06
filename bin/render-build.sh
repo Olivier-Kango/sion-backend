@@ -2,9 +2,6 @@
 # exit on error
 set -o errexit
 
-# Use the locally installed Ruby
-rvm use 3.1.3
-
 # Install Bundler
 gem install bundler -v 2.4.10
 
