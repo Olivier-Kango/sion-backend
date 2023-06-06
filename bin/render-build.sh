@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-gem install bundler
+sudo gem install bundler
 bundle install
 bundle exec rails assets:precompile
 bundle exec rails assets:clean
