@@ -5,8 +5,8 @@ set -o errexit
 # Specify a different writable directory
 export GEM_HOME="/tmp/vendor/bundle"
 
-gem install bundler
-bundle install --path "${GEM_HOME}"
-bundle exec rails assets:precompile
-bundle exec rails assets:clean
-bundle exec rails db:migrate
+gem install bundler -v 2.3.26
+bundle _2.3.26_ install --path "${GEM_HOME}"
+bundle _2.3.26_ exec rails assets:precompile
+bundle _2.3.26_ exec rails assets:clean
+bundle _2.3.26_ exec rails db:migrate
