@@ -2,6 +2,8 @@
 # exit on error
 set -o errexit
 
+rbenv global 3.1.3
+
 gem install bundler -v 2.4.10 --user-install
 
 # Add the gem executables directory to the PATH
