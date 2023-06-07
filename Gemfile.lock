@@ -310,12 +310,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activesupport (~> 7.0.4.2)
   bootsnap
   cancancan
   capistrano
   debug
-  devise (~> 4.9.0)
+  devise (~> 4.9)
   devise-jwt
   figaro
   hirb

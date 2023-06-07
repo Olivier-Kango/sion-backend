@@ -10,8 +10,7 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
 gem 'figaro'
 
 # For User authentication
-gem 'devise', '~> 4.9.0'
-gem 'activesupport', '~> 7.0.4.2'
+gem 'devise', '~> 4.9'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
 
