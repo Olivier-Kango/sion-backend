@@ -82,7 +82,7 @@
 
 
 <!-- React Frontend -->
-### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="20" height="20"/>  <a href="https://github.com/DaveZag/meal-master-frontend">Meal-Master-Frontend</a>
+### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="20" height="20"/>  <a href="https://github.com/Olivier-Kango/pss-digital-frontend">PSS-Digital-Frontend</a>
 
 
 ## 🚀 **Live demo** <a id="live-demo"></a>
