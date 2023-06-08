@@ -58,10 +58,10 @@
 > Key features of the application are
 
 - **Fetch all orders**
-- **Fetch all foods**
+- **Fetch all products**
 - **Authenticate users**
-- **Add food**
-- **Delete food**
+- **Add product**
+- **Delete product**
 - **Place orders**
 - **Delete orders**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
