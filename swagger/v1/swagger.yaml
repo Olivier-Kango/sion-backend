@@ -4,18 +4,18 @@ info:
   title: API V1
   version: v1
 paths:
-  "/api/v1/foods":
+  "/api/v1/products":
     get:
-      summary: list foods
+      summary: list products
       responses:
         '200':
           description: successful
     post:
-      summary: create food
+      summary: create product
       responses:
         '200':
           description: successful
-  "/api/v1/foods/{id}":
+  "/api/v1/products/{id}":
     parameters:
     - name: id
       in: path
@@ -24,22 +24,22 @@ paths:
       schema:
         type: string
     get:
-      summary: show food
+      summary: show product
       responses:
         '200':
           description: successful
     patch:
-      summary: update food
+      summary: update product
       responses:
         '200':
           description: successful
     put:
-      summary: update food
+      summary: update product
       responses:
         '200':
           description: successful
     delete:
-      summary: delete food
+      summary: delete product
       responses:
         '200':
           description: successful
