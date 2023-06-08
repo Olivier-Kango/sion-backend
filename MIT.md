@@ -1,7 +1,7 @@
 ## Copyright 2021, [DAVE, KEN, KAWEESI, KANGO, ELIJAH]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [MEAL-MASTER] and associated documentation files, to deal in the [MEAL-MASTER] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [MEAL-MASTER], and to permit persons to whom the [MEAL-MASTER] is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this [PSS-Digital] and associated documentation files, to deal in the [PSS-Digital] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [PSS-Digital], and to permit persons to whom the [PSS-Digital] is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [MEAL-MASTER].
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [PSS-Digital].
 
-THE [MEAL-MASTER] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [MEAL-MASTER] OR THE USE OR OTHER DEALINGS IN THE [MEAL-MASTER].
+THE [PSS-Digital] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [PSS-Digital] OR THE USE OR OTHER DEALINGS IN THE [PSS-Digital].

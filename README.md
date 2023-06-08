@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#table-of-contents)
-- [📖MEAL MASTER BACKEND](#meal-master-backend)
+- [📖PSS DIGITAL BACKEND](#pss-digital-backend)
   - [Erd diagram](#erddiagram)
   - [🛠 Built with](#built-with)
     - [Tech stack ](#tech-stack)
@@ -27,9 +27,9 @@
   - [📝 License ](#-license)
 
 
-# 📖 **MEAL MASTER BACKEND** <a id="meal-master-backend">
+# 📖 **PSS DIGITAL BACKEND** <a id="pss-digital-backend">
 
-**Meal-Master** is a fullstack web application that is built on rails framework and React that enables a user to create an account, sign-in, order foods of their liking, and/or delete their orders.
+**Pss-Digital** is a proven digital solution that makes online shopping easy, convenient, and enjoyable for customers. The application also helps other businesses maximize their customer base through e-commerce. With PSS Digital, we help you achieve success while also supporting you in efficient business management.
 
 ## **Erd diagram** <a id="erddiagram">
 <img src="./erd_diagram.png" width="700" height="300"/>
@@ -87,7 +87,7 @@
 
 ## 🚀 **Live demo** <a id="live-demo"></a>
 
-- [Live Demo](https://master-meal.netlify.app/)
+- [Live Demo](https://pss-digital.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +117,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/DaveZag/meal-master-backend.git
+  git clone https://github.com/Olivier-Kango/pss-digital-backend.git
 ```
 
 ### **Install**
@@ -125,7 +125,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd meal-master-backend # Change directory into project folder
+  cd pss-digital-backend # Change directory into project folder
   bundle install # Installs project dependencies
 ```
 ### Important steps after installing project to local machine
@@ -219,7 +219,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DaveZag/meal-master-backend/issues).
+Feel free to check the [issues page](https://github.com/Olivier-Kango/pss-digital-backend/issues/new).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
