@@ -7,7 +7,7 @@ class Ability
     return unless user.present?
 
     can(:manage, Order, user:)
-    can :read, Food
+    can :read, Product
     return unless user.admin?
 
     can :manage, :all
