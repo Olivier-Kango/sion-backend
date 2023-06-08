@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :jwt_authenticatable, jwt_revocation_strategy: self
 
   has_many :orders, dependent: :destroy
-  has_many :foods, through: :orders
+  has_many :products, through: :orders
 
   validates :email, :name, presence: true
   validates :password, presence: true
