@@ -72,13 +72,11 @@
 > <a href="https://app.swaggerhub.com/apis-docs/OLIVIERKANGO/PSS-Digital/1.0.0">Remote API Doc link</a>
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/5360/5360804.png" width="23" height="20"/> Kanban Board <a id="kanban-board"></a>
-- We are a team of five and used Kanban board to manage our project tasks
+- At the beginning we were a team of five (after our studies at Microverse) we used Kanban board to manage our project tasks
 
 - Check here Kanban Board [Kanban Board](https://github.com/users/DaveZag/projects/2/views/1)
 
 - Here  is the link to [kanban board initial state](https://user-images.githubusercontent.com/108806646/223073503-281902af-2be4-44a1-840c-394ca01a7447.png)
-
-
 
 
 <!-- React Frontend -->
