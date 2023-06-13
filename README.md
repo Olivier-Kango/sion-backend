@@ -38,20 +38,28 @@
 
 ### **Tech stack** <a id="tech-stack"></a>
 
+<details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+    <li><a href="https://sass-lang.com/">SCSS</a></li>
   </ul>
+</details>
 
+<details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://api.rubyonrails.org/">Rails.js</a></li>
+    <li><a href="https://api.rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
+</details>
 
+<details>
   <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
+</details>
 
 ### **Key features** <a id="key-features"></a>
 
@@ -67,18 +75,16 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🗎 **API documentation** <a id="api-docs"></a>
-> <a href="http://127.0.0.1:5000/api-docs/index.html">local API Doc link</a>
+> <a href="./PSS-Digital-api.yaml">local API Doc link</a>
 
-> <a href="https://app.swaggerhub.com/apis-docs/KASAIJAK/meal-master-final-capstone-api-documentation/v1">Remote API Doc link</a>
+> <a href="https://app.swaggerhub.com/apis-docs/OLIVIERKANGO/PSS-Digital/1.0.0">Remote API Doc link</a>
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/5360/5360804.png" width="23" height="20"/> Kanban Board <a id="kanban-board"></a>
-- We are a team of five and used Kanban board to manage our project tasks
+- At the beginning we were a team of five (after our studies at Microverse) we used Kanban board to manage our project tasks
 
 - Check here Kanban Board [Kanban Board](https://github.com/users/DaveZag/projects/2/views/1)
 
 - Here  is the link to [kanban board initial state](https://user-images.githubusercontent.com/108806646/223073503-281902af-2be4-44a1-840c-394ca01a7447.png)
-
-
 
 
 <!-- React Frontend -->
@@ -175,32 +181,32 @@ Example:
 
 ## 👥 **Authors** <a id="authors"></a>
 
-👤 **Dave Zagabe** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
+👤 **Dave Zagabe From DRC - Bukavu** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/daveZag/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/davezagabe/)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/davezagabe2/)
 
-👤 **Kasaija Kenneth** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
+👤 **Kasaija Kenneth from Uganda** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kasaija-Kenneth/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kasaija-kenneth/)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/kenn_ug/)
 
-👤 **Kaweesi Matia** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
+👤 **Kaweesi Matia from Uganda** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kaweesi-Matia/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaweesi-matia/)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/kaweesimatia/)
 
-👤 **Olivier Kango** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
+👤 **Olivier Kango from DRC - Goma** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Olivier-Kango/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olivier-kango-b990601b8/)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/olivierkango1/)
 
 
-👤 **Elijah Odjegba** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
+👤 **Elijah Odjegba from Nigeria** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Elijahdre/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elijah-odjegba/)
@@ -262,3 +268,4 @@ I would like to acknowledge:
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+

@@ -1,0 +1,407 @@
+---
+openapi: 3.0.0
+info:
+  title: pss-digital-api
+  description: The API for PSS-Digital project
+  version: 1.0.0
+servers:
+- url: https://virtserver.swaggerhub.com/OLIVIERKANGO/PSS-Digital/1.0.0
+  description: SwaggerHub API Auto Mocking
+paths:
+  /api/v1/products:
+    get:
+      tags:
+      - Products
+      summary: List products
+      operationId: getProducts
+      parameters:
+      - name: skip
+        in: query
+        description: Number of records to skip
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: integer
+          format: int32
+      - name: limit
+        in: query
+        description: Max number of records to return
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+                  format: uri
+                  example: http://10.0.0.225:8080
+    post:
+      tags:
+      - Products
+      summary: Create product
+      operationId: register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+  /api/v1/products/{id}:
+    get:
+      tags:
+      - Products
+      summary: Get product by ID
+      operationId: getProductById
+      parameters:
+      - name: id
+        in: path
+        description: Product ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+    put:
+      tags:
+      - Products
+      summary: Update product
+      operationId: updateProduct
+      parameters:
+      - name: id
+        in: path
+        description: Product ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+    delete:
+      tags:
+      - Products
+      summary: Delete product
+      operationId: deleteProduct
+      parameters:
+      - name: id
+        in: path
+        description: Product ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful response
+  /api/v1/orders:
+    get:
+      tags:
+      - Orders
+      summary: List orders
+      operationId: getOrders
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Order'
+    post:
+      tags:
+      - Orders
+      summary: Create order
+      operationId: createOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+  /api/v1/orders/{id}:
+    get:
+      tags:
+      - Orders
+      summary: Get order by ID
+      operationId: getOrderById
+      parameters:
+      - name: id
+        in: path
+        description: Order ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+    put:
+      tags:
+      - Orders
+      summary: Update order
+      operationId: updateOrder
+      parameters:
+      - name: id
+        in: path
+        description: Order ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+    delete:
+      tags:
+      - Orders
+      summary: Delete order
+      operationId: deleteOrder
+      parameters:
+      - name: id
+        in: path
+        description: Order ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful response
+  /users/signup:
+    post:
+      tags:
+      - Users
+      summary: User Signup
+      operationId: userSignup
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserSignupRequest'
+        required: true
+      responses:
+        "200":
+          description: User signed up successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+  /users/login:
+    post:
+      tags:
+      - Users
+      summary: User Login
+      operationId: userLogin
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserLoginRequest'
+        required: true
+      responses:
+        "200":
+          description: User logged in successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+  /users/logout:
+    post:
+      tags:
+      - Users
+      summary: User Logout
+      operationId: userLogout
+      responses:
+        "200":
+          description: User logged out successfully
+  /users/{id}:
+    get:
+      tags:
+      - Users
+      summary: Get User
+      operationId: getUser
+      parameters:
+      - name: id
+        in: path
+        description: User ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: User retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+    put:
+      tags:
+      - Users
+      summary: Update User
+      operationId: updateUser
+      parameters:
+      - name: id
+        in: path
+        description: User ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdateRequest'
+        required: true
+      responses:
+        "200":
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+    delete:
+      tags:
+      - Users
+      summary: Delete User
+      operationId: deleteUser
+      parameters:
+      - name: id
+        in: path
+        description: User ID
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: User deleted successfully
+components:
+  schemas:
+    Product:
+      required:
+      - name
+      - unit_price
+      type: object
+      properties:
+        name:
+          type: string
+        image:
+          type: string
+        unit_price:
+          type: number
+          format: float
+    Order:
+      required:
+      - delivery_point
+      - product_id
+      - quantity
+      - user_id
+      type: object
+      properties:
+        quantity:
+          type: integer
+          format: int32
+        delivery_point:
+          type: string
+        product_id:
+          type: string
+        user_id:
+          type: string
+    UserSignupRequest:
+      required:
+      - email
+      - password
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+    UserLoginRequest:
+      required:
+      - email
+      - password
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+    UserUpdateRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+    UserResponse:
+      required:
+      - email
+      - id
+      type: object
+      properties:
+        id:
+          type: integer
+        email:
+          type: string
