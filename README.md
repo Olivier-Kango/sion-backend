@@ -3,8 +3,6 @@
 <div align="center">
   <img src="./app/assets/images/pss-logo.png" alt="logo" width="240"  height="auto" />
   <br/>
-
-  <h3><b>README</b></h3>
 </div>
 
 # 📗 Table of Contents
