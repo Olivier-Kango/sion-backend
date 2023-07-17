@@ -48,6 +48,6 @@ class Api::V1::ProductsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def product_params
-    params.require(:product).permit(:name, :image, :unit_price)
+    params.require(:product).permit(:name, :image, :unit_price, :category, :quantity)
   end
 end
