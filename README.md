@@ -37,7 +37,7 @@
 **Pss-Digital** is a proven digital solution that makes online shopping easy, convenient, and enjoyable for customers. The application also helps other businesses maximize their customer base through e-commerce. With PSS Digital, we help you achieve success while also supporting you in efficient business management.
 
 ## **Erd diagram** <a id="erddiagram">
-<img src="./erd_diagram.png" width="700" height="300"/>
+<img src="./erd_diagram.png" width="700" height="auto"/>
 
 ## 🛠 **Built with** <a id="built-with">
 
