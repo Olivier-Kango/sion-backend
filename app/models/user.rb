@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :orders, dependent: :destroy
   has_many :products, through: :orders
+  has_many :stock_movements, dependent: :destroy
 
   validates :email, :name, presence: true
   validates :password, presence: true
