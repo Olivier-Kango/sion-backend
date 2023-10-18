@@ -8,7 +8,6 @@ class CreateStockMovements < ActiveRecord::Migration[7.0]
       t.string :reason
       t.datetime :created_at
       t.string :note
-      t.timestamps
     end
 
     add_foreign_key :stock_movements, :products, column: :product_id
