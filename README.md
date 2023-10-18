@@ -273,4 +273,3 @@ I would like to acknowledge:
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-

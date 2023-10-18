@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_07_041947) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_18_072248) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,6 +39,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_07_041947) do
     t.string "subcategory"
   end
 
+  create_table "stock_movements", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "user_id"
+    t.string "movement_type", comment: "Entry, Sale, Loss, Gift, etc."
+    t.integer "quantity"
+    t.string "reason"
+    t.datetime "created_at"
+    t.string "note"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "role"
@@ -57,4 +67,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_07_041947) do
 
   add_foreign_key "orders", "products"
   add_foreign_key "orders", "users"
+  add_foreign_key "stock_movements", "products"
+  add_foreign_key "stock_movements", "users"
 end
