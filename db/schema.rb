@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_18_072248) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_19_165920) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -49,6 +49,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_18_072248) do
     t.string "note"
   end
 
+  create_table "transactions", force: :cascade do |t|
+    t.bigint "product_id", null: false
+    t.bigint "user_id", null: false
+    t.string "movement_type", comment: "Sale, Donation, Loss, etc."
+    t.integer "quantity"
+    t.string "reason"
+    t.string "note"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_transactions_on_product_id"
+    t.index ["user_id"], name: "index_transactions_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "role"
@@ -69,4 +82,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_18_072248) do
   add_foreign_key "orders", "users"
   add_foreign_key "stock_movements", "products"
   add_foreign_key "stock_movements", "users"
+  add_foreign_key "transactions", "products"
+  add_foreign_key "transactions", "users"
 end
