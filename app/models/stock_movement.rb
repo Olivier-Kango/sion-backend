@@ -1,6 +1,7 @@
 class StockMovement < ApplicationRecord
   belongs_to :product
   belongs_to :user
+  has_one :transaction
 
   validates :movement_type, presence: true
   validates :quantity, presence: true, numericality: { greater_than: 0 }
