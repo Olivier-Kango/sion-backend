@@ -3,7 +3,7 @@ class Api::V1::RequestedProductsController < ApplicationController
 
   # GET /requested_products
   def index
-    @requested_products = RequestedProduct.all
+    @requested_products = RequestedProduct.all.order(request_count: :desc)
 
     render json: @requested_products
   end
