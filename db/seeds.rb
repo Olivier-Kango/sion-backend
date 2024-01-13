@@ -2,8 +2,6 @@ User.create(name:'Kango', email: 'admin@gmail.com', role:'admin', password: 'pas
 
 products = [
   {
-    id: 36, name: 'Fer à béton bar de 12', image: 'https://res.cloudinary.com/du1qvhkp2/image/upload/v1694242850/images_40_karc3v.jpg', unit_price: '6.5', quantity: 30, category: 'Hardware Store', unit_purchase_price: '6.37', created_at: '2023-09-09T07:01:04.588Z', updated_at: '2023-10-09T13:52:14.790Z', subcategory: 'Building',
-  }, {
     id: 39, name: 'Fer à béton bar de 6 ptf', image: 'https://res.cloudinary.com/du1qvhkp2/image/upload/v1694243012/images_42_dx9xtt.jpg', unit_price: '2.0', quantity: 30, category: 'Hardware Store', unit_purchase_price: '1.3', created_at: '2023-09-09T07:03:36.161Z', updated_at: '2023-10-09T13:52:44.972Z', subcategory: 'Building',
   }, {
     id: 171, name: 'Lampe 40W', image: 'https://res.cloudinary.com/du1qvhkp2/image/upload/v1696861116/images_99_aufmlw.jpg', unit_price: '3.5', quantity: 2, category: 'Hardware Store', unit_purchase_price: '3.0', created_at: '2023-10-09T14:19:26.979Z', updated_at: '2023-10-09T14:20:46.271Z', subcategory: 'Electrical',
