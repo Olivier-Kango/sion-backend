@@ -15,7 +15,7 @@ class Api::V1::RequestedProductsController < ApplicationController
 
   # POST /requested_product
   def create
-    @requested_product= RequestedProduct.new(requested_product_params)
+    @requested_product = RequestedProduct.new(requested_product_params)
 
     if @requested_product.save
       render json: @requested_product, status: :created
@@ -43,7 +43,7 @@ class Api::V1::RequestedProductsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_requested_product
-    @requested_product = Product.find(params[:id])
+    @requested_product = RequestedProduct.find(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
