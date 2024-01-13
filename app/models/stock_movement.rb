@@ -13,14 +13,15 @@ class StockMovement < ApplicationRecord
   private
 
   def update_product_quantity
-    if movement_type == 'Entry'
+    case movement_type
+    when 'Entry'
       product.quantity += quantity
-    elsif movement_type == 'Sale'
+    when 'Sale'
       product.quantity -= quantity
-    elsif movement_type == 'Loss'
-      product.quantity -= quantity
-    elsif movement_type == 'Gift'
-      product.quantity -= quantity
+      # when 'Loss'
+      #   product.quantity -= quantity
+      # when 'Gift'
+      #   product.quantity -= quantity
     end
 
     product.save
