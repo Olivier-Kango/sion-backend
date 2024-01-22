@@ -1,14 +1,14 @@
 <a id="readme-top"></a>
 
 <div align="center">
-  <img src="./app/assets/images/pss-logo.png" alt="logo" width="240"  height="auto" />
+  <img src="./app/assets/images/sion.png" alt="logo" width="240"  height="auto" />
   <br/>
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#table-of-contents)
-- [📖PSS DIGITAL BACKEND](#pss-digital-backend)
+- [📖SION BACKEND](#sion-backend)
   - [Erd diagram](#erddiagram)
   - [🛠 Built with](#built-with)
     - [Tech stack ](#tech-stack)
@@ -32,9 +32,9 @@
   - [📝 License ](#-license)
 
 
-# 📖 **PSS DIGITAL BACKEND** <a id="pss-digital-backend">
+# 📖 **Sion Backend** <a id="sion-backend">
 
-**Pss-Digital** is a proven digital solution that makes online shopping easy, convenient, and enjoyable for customers. The application also helps other businesses maximize their customer base through e-commerce. With PSS Digital, we help you achieve success while also supporting you in efficient business management.
+**Sion** is a proven digital solution that makes online shopping easy, convenient, and enjoyable for customers. The application also helps other businesses maximize their customer base through e-commerce. With Sion, we help you achieve success while also supporting you in efficient business management.
 
 ## **Erd diagram** <a id="erddiagram">
 <img src="./erd_diagram.png" width="700" height="auto"/>
@@ -80,7 +80,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🗎 **API documentation** <a id="api-docs"></a>
-> <a href="./PSS-Digital-api.yaml">local API Doc link</a>
+> <a href="./Sion-api.yaml">local API Doc link</a>
 
 > <a href="https://app.swaggerhub.com/apis-docs/OLIVIERKANGO/PSS-Digital/1.0.0">Remote API Doc link</a>
 
@@ -93,12 +93,12 @@
 
 
 <!-- React Frontend -->
-### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="20" height="20"/>  <a href="https://github.com/Olivier-Kango/pss-digital-frontend">PSS-Digital-Frontend</a>
+### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" width="20" height="20"/>  <a href="https://github.com/Olivier-Kango/sion-frontend">Sion-Frontend</a>
 
 
 ## 🚀 **Live demo** <a id="live-demo"></a>
 
-- [Live Demo](https://pss-digital.netlify.app/)
+- [Live Demo](https://sion-digital.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +128,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/Olivier-Kango/pss-digital-backend.git
+  git clone https://github.com/Olivier-Kango/sion-backend.git
 ```
 
 ### **Install**
@@ -136,7 +136,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd pss-digital-backend # Change directory into project folder
+  cd sion-backend # Change directory into project folder
   bundle install # Installs project dependencies
 ```
 ### Important steps after installing project to local machine
@@ -230,7 +230,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Olivier-Kango/pss-digital-backend/issues/new).
+Feel free to check the [issues page](https://github.com/Olivier-Kango/sion-backend/issues/new).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
