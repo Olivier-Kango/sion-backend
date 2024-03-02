@@ -27,15 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_09_120455) do
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
-  create_table "product_requests", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "product_name"
-    t.integer "request_count"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "products", force: :cascade do |t|
+  create_table "products", id: :serial, force: :cascade do |t|
     t.string "name"
     t.string "image"
     t.decimal "unit_price", precision: 10, scale: 2
@@ -45,6 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_09_120455) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "subcategory"
+    t.index ["id"], name: "index_products_on_id", unique: true
   end
 
   create_table "requested_products", force: :cascade do |t|
@@ -62,19 +55,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_09_120455) do
     t.string "reason"
     t.datetime "created_at"
     t.string "note"
-  end
-
-  create_table "transactions", force: :cascade do |t|
-    t.bigint "product_id", null: false
-    t.bigint "user_id", null: false
-    t.string "movement_type"
-    t.integer "quantity"
-    t.string "reason"
-    t.string "note"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["product_id"], name: "index_transactions_on_product_id"
-    t.index ["user_id"], name: "index_transactions_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -97,6 +77,4 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_09_120455) do
   add_foreign_key "orders", "users"
   add_foreign_key "stock_movements", "products"
   add_foreign_key "stock_movements", "users"
-  add_foreign_key "transactions", "products"
-  add_foreign_key "transactions", "users"
 end
