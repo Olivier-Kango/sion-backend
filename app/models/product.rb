@@ -1,6 +1,4 @@
 class Product < ApplicationRecord
-  self.primary_key = 'id'
-
   has_many :orders, dependent: :destroy
   has_many :users, through: :orders
   has_many :stock_movements, dependent: :destroy
