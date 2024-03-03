@@ -12,31 +12,30 @@ class CreateProducts < ActiveRecord::Migration[7.0]
 
     add_index :products, :id, unique: true
 
-    up if sequence_exists?('products_id_seq')
-  end
-
-  def up
-    unless sequence_exists?('products_id_seq')
-      execute <<-SQL
-        CREATE SEQUENCE products_id_seq;
-        ALTER TABLE products ALTER COLUMN id SET DEFAULT nextval('products_id_seq');
-      SQL
-
-      # Select the ID with the highest in the products table 
-      max_id = ActiveRecord::Base.connection.execute("SELECT MAX(id) FROM products").first["max"]
-      max_id ||= 0
-
-      execute("ALTER SEQUENCE products_id_seq RESTART WITH #{max_id + 1};")
-    end
-  end
-
-  def down
-    execute "DROP SEQUENCE IF EXISTS products_id_seq;"
+    create_sequence if sequence_missing?('products_id_seq')
+    restart_sequence if sequence_exists?('products_id_seq')
   end
 
   private
 
+  def create_sequence
+    execute <<-SQL
+      CREATE SEQUENCE products_id_seq;
+      ALTER TABLE products ALTER COLUMN id SET DEFAULT nextval('products_id_seq');
+    SQL
+  end
+
+  def restart_sequence
+    max_id = ActiveRecord::Base.connection.execute("SELECT MAX(id) FROM products").first["max"]
+    max_id ||= 0
+    execute("ALTER SEQUENCE products_id_seq RESTART WITH #{max_id + 1};")
+  end
+
   def sequence_exists?(name)
     ActiveRecord::Base.connection.execute("SELECT 1 FROM pg_class WHERE relname = '#{name}'").any?
+  end
+
+  def sequence_missing?(name)
+    !sequence_exists?(name)
   end
 end
