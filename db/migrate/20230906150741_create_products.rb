@@ -11,5 +11,8 @@ class CreateProducts < ActiveRecord::Migration[7.0]
     end
 
     add_index :products, :id, unique: true
+
+    # Reset primary key sequence for the 'products' table
+    ActiveRecord::Base.connection.reset_pk_sequence!('products')
   end
 end
