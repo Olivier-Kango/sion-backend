@@ -1,6 +1,6 @@
 class CreateProducts < ActiveRecord::Migration[7.0]
   def change
-    create_table :products, id: :serial do |t|
+    create_table :products, id: :primary_key do |t|
       t.string :name
       t.string :image
       t.decimal :unit_price, precision: 10, scale: 2
