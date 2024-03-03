@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_09_120455) do
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
-  create_table "products", id: :serial, force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "name"
     t.string "image"
     t.decimal "unit_price", precision: 10, scale: 2
