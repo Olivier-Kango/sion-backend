@@ -27,5 +27,11 @@ module MealMasterBackend
 
     # Configure session store
     config.middleware.use ActionDispatch::Session::CookieStore, key: '_meal_master_session'
+
+    config.after_initialize do
+      ActiveRecord::Base.connection.tables.each do |table_name| 
+        ActiveRecord::Base.connection.reset_pk_sequence!(table_name)
+      end
+    end
   end
 end
