@@ -1,5 +1,5 @@
 class Api::V1::OrdersController < ApplicationController
-  before_action :set_order, only: %i[show update destroy]
+  before_action :set_order, only: %i[show update destroy mark_as_delivered mark_as_paid]
 
   # GET /orders
   def index
@@ -15,6 +15,7 @@ class Api::V1::OrdersController < ApplicationController
   # POST /orders
   def create
     @order = Order.new(order_params)
+    @order.status = 'new'
 
     if @order.save
       render json: @order, status: :created
@@ -35,6 +36,25 @@ class Api::V1::OrdersController < ApplicationController
   # DELETE /orders/1
   def destroy
     @order.destroy
+    render json: { message: 'Order successfully deleted.' }
+  end
+
+  # PATCH /orders/1/mark_as_delivered
+  def mark_as_delivered
+    if @order.update(status: 'delivered')
+      render json: @order
+    else
+      render json: @order.errors, status: :unprocessable_entity
+    end
+  end
+
+  # PATCH /orders/1/mark_as_paid
+  def mark_as_paid
+    if @order.update(status: 'paid')
+      render json: @order
+    else
+      render json: @order.errors, status: :unprocessable_entity
+    end
   end
 
   private
