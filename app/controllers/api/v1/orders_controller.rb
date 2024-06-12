@@ -39,6 +39,15 @@ class Api::V1::OrdersController < ApplicationController
     render json: { message: 'Order successfully deleted.' }
   end
 
+  # PATCH /orders/1/mark_as_in_progress
+  def mark_as_in_progress
+    if @order.update(status: 'in_progress')
+      render json: @order
+    else
+      render json: @order.errors, status: :unprocessable_entity
+    end
+  end
+
   # PATCH /orders/1/mark_as_delivered
   def mark_as_delivered
     if @order.update(status: 'delivered')
