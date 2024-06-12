@@ -75,6 +75,6 @@ class Api::V1::OrdersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def order_params
-    params.require(:order).permit(:quantity, :delivery_point, :product_id, :user_id)
+    params.require(:order).permit(:quantity, :delivery_point, :product_id, :user_id, :status)
   end
 end
