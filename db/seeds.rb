@@ -1,6 +1,6 @@
 User.create(name:'Sion', email: 'olivierkango@gmail.com', role:'admin', password: 'Bleu111111', password_confirmation: 'password')
 
-products: [{
+products = [{
   id: 84, name: 'Conception site web', image: 'https://res.cloudinary.com/du1qvhkp2/image/upload/v1709504378/site_szikrr.png', unit_price: '2000.0', quantity: 1, category: 'IT Services', unit_purchase_price: '2000.0', created_at: '2024-03-03T22:20:03.341Z', updated_at: '2024-03-03T22:20:03.341Z', subcategory: 'IT Services',
 }, {
   id: 39, name: 'Fer à béton bar de 6 ptf', image: 'https://res.cloudinary.com/du1qvhkp2/image/upload/v1694243012/images_42_dx9xtt.jpg', unit_price: '2.0', quantity: 30, category: 'Hardware Store', unit_purchase_price: '1.3', created_at: '2023-09-09T07:03:36.161Z', updated_at: '2023-10-09T13:52:44.972Z', subcategory: 'Building',
