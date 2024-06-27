@@ -286,3 +286,4 @@ products = [{
 products.each do |product_params|
   Product.create!(product_params)
 end
+
