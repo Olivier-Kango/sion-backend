@@ -14,7 +14,13 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :products
-      resources :orders
+      resources :orders do
+        member do
+          patch :mark_as_delivered
+          patch :mark_as_paid
+          patch :in_progress
+        end
+      end
       resources :stock_movements
       resources :requested_products
     end

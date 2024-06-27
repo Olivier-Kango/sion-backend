@@ -6,6 +6,8 @@ class Order < ApplicationRecord
   validates :quantity, presence: true, numericality: true, comparison: { greater_than: 0 }
   validates :delivery_point, presence: true
 
+  enum status: { new: 'new', processing: 'processing', delivered: 'delivered', paid: 'paid' }
+
   def price
     quantity * product.unit_price
   end
