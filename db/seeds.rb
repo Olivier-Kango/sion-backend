@@ -433,5 +433,5 @@ products.each do |product|
 end
 
 requestedProducts.each do |product|
-  Product.create!(product)
+  RequestedProduct.create!(product)
 end
